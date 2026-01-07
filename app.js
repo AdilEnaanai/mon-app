@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World - Version 1.0</h1>');
+  res.send('<h1>Hello World - Version 2.0</h1>');
 });
+// Nouvelle route ajoutée
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
